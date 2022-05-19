@@ -38,6 +38,11 @@ export async function logout() {
     return (window.location.href = '../');
 }
 
-// function checkError({ data, error }) {
-//     return error ? console.error(error) : data;
-// }
+function checkError({ data, error }) {
+    return error ? console.error(error) : data;
+}
+
+export async function getListItems() {
+    const response = await client.from('shopping_list').select();
+    return checkError(response);
+}
