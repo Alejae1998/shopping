@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/home.css" />
+        <link rel="stylesheet" href="../styles/list.css>" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/home.css">
-    <link rel="stylesheet" href="../styles/list.css>">
+        <title>Document</title>
+    </head>
 
-    <title>Document</title>
-</head>
-
-<body>
-    <header>
-        <h1>Welcome!✨</h1>
-        <div class="gutter-right logo">
-            <button id="logout">Logout</button>
-</div>
-    </header>   
-    <main>
-       <section>
-           <p id="error"></p>
-           <form class="item-form">
-               <label>Quantity: <input type="number" name="quantity" min="0" /></label>
-               <label> Item: <input name="item" /></label>
-               <button>Add item</button>
-           </form>
-           <ul class="list">
-
-           </ul>
-           <button class="remove">remove all</button>
-       </section> 
-        
-    </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
-    </footer>
-    <script type="module" src="./list.js"></script>
-</body>
-
+    <body>
+        <header>
+            <h1>Welcome!✨</h1>
+            <div class="gutter-right logo">
+                <button id="logout">Logout</button>
+            </div>
+        </header>
+        <main>
+            <section>
+                <p>Add your shopping list here 🛍️</p>
+                <form class="item-form">
+                    <label>Quantity: <input type="number" name="qty" min="0" /></label>
+                    <label> Item: <input name="name" /></label>
+                    <button>Add item</button>
+                </form>
+                <ul class="list"></ul>
+                <button class="remove">remove all</button>
+            </section>
+        </main>
+        <footer>
+            <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
+        </footer>
+        <script type="module" src="./list.js"></script>
+    </body>
 </html>
