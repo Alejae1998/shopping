@@ -15,3 +15,6 @@
  border-radius: 20px;
  box-shadow: 0px 25px 40px #1687d933;
 } */
+.bought {
+  text-decoration: line-through;
+}

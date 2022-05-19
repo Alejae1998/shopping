@@ -49,13 +49,13 @@ async function fetchAndDisplayList() {
         if (name.bought) {
             listItemEl.classList.add('bought');
         } else {
-            
             listItemEl.classList.add('not-bought');
-            listItemEl.addEventListener('click', async () => {
-                await buyItem(name.id);
-                fetchAndDisplayList();
-            });
-            listEl.append(listItemEl);
         }
+        listItemEl.addEventListener('click', async () => {
+            await buyItem(name.id);
+            
+            fetchAndDisplayList();
+        });
+        listEl.append(listItemEl);
     }
 }

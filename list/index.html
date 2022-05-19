@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-        <link
+        <!-- <link
             href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
             rel="stylesheet"
-        />
+        /> -->
         <link rel="stylesheet" href="../styles/reset.css" />
         <link rel="stylesheet" href="../styles/style.css" />
         <link rel="stylesheet" href="../styles/home.css" />
-        <link rel="stylesheet" href="../styles/list.css>" />
+        <link rel="stylesheet" href="../styles/list.css" />
 
         <title>Document</title>
     </head>
@@ -29,10 +29,16 @@
                 <p>Add your shopping list here 🛍️</p>
                 <form class="item-form">
                     <label>Quantity: <input type="number" name="qty" min="0" /></label>
-                    <label> Item: <input name="name" /></label>
+                    <label> Item: <input name="name" placeholder="Enter new item here"/>
+                    </label>
                     <button>Add item</button>
                 </form>
-                <ul class="list"></ul>
+                <ul class="list">
+
+
+                    
+                </ul>
+
                 <button class="remove">remove all</button>
             </section>
         </main>

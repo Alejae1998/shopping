@@ -57,16 +57,13 @@ export async function createItem(name, qty) {
     // return checkError(response);
 }
 
-export async function buyItem(id) {
-    const response = await client.from('shopping_list').update({ bought: true }).match({ user_id: getUser().id });
+export async function buyItem(someId) {
+    const response = await client.from('shopping_list').update({ bought: true }).match({ id: someId });
     return checkError(response);
 }
 
 export async function deleteAllItems() {
-    const response = await client
-        .from('shopping_list')
-        .delete({ bought: true })
-        .match({ user_id: getUser().id });
+    const response = await client.from('shopping_list').delete().match({ user_id: getUser().id });
     return checkError(response);
 }
 
