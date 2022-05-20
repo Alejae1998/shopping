@@ -1,0 +1,63 @@
+header {
+  height: 120px;
+  border: 10px solid #fff;
+ background-color: #fff;
+  
+}
+
+body {
+  background: url(../assets/listback.jpeg) center center fixed ;
+  background-repeat: no-repeat;
+}
+
+
+
+.item-form {
+  padding: 20px;
+  font-size: 1.4rem;
+}
+
+
+.list {
+  padding: 0;
+  list-style-type: none;
+  clear: both;
+  border: 10px solid #fff;
+  background-color: #fff;
+}
+
+.list__item {
+  font-size: 1.3rem;
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+.list__item:nth-child(odd) {
+  background: #3850da;
+}
+
+.list__item:nth-child(even) {
+  background: #4527A0;
+}
+
+.list__check-btn {
+  cursor: pointer;
+  float: right;
+  margin: -5px;
+  padding: 4px 8px;
+}
+
+/* .remove {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+} */
