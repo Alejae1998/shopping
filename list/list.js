@@ -59,3 +59,5 @@ async function fetchAndDisplayList() {
         listEl.append(listItemEl);
     }
 }
+
+
